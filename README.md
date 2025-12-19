@@ -48,3 +48,59 @@ The MedBERT system follows a streamlined, yet comprehensive, workflow:
 5.  The final output is presented to the medical professional as a structured report, serving as a powerful decision-making aid.
 
 This project leverages the power of AI to create a truly useful and advanced tool for the medical field, enhancing a doctor's ability to provide accurate and efficient care.
+
+---
+
+To wrap everything up, here is the complete, final directory structure for **MedBERT**. This setup integrates the TypeScript frontend/backend with the Python AI logic, privacy tools, and Docker orchestration we've built.
+
+### 📂 Project Directory Structure
+
+```text
+MedBERT/
+├── client/                      # NEXT.JS FRONTEND
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── layout.tsx       # Root layout
+│   │   │   └── page.tsx         # Main UI logic (with Loading states)
+│   │   ├── components/
+│   │   │   ├── DiagnosticReport.tsx # The visual report component
+│   │   │   └── Navbar.tsx
+│   │   └── lib/
+│   │       └── api.ts           # Axios instance & API calls
+│   ├── public/                  # Clinical icons & assets
+│   ├── tailwind.config.ts
+│   ├── Dockerfile
+│   └── package.json
+│
+├── server/                      # NODE.JS/EXPRESS BACKEND
+│   ├── src/
+│   │   ├── controllers/
+│   │   │   └── diagnosisController.ts # Orchestrates the 5-step flow
+│   │   ├── models/
+│   │   │   └── PatientLog.ts    # MongoDB Schema (Anonymized)
+│   │   ├── routes/
+│   │   │   └── api.ts           # Endpoint mapping
+│   │   └── index.ts             # Server entry point
+│   ├── Dockerfile
+│   ├── .env                     # Server secrets
+│   └── package.json
+│
+├── ai_engine/                   # PYTHON AI SERVICE
+│   ├── utils/
+│   │   ├── privacy.py           # Presidio Anonymization logic
+│   │   ├── pdf_parser.py        # PyMuPDF & LangChain logic
+│   │   └── stats.py             # Biostatistical risk formulas
+│   ├── models/
+│   │   └── medbert_gemma_lora/  # Saved fine-tuned weights
+│   ├── app.py                   # FastAPI /process-clinical-data endpoint
+│   ├── train.py                 # Unsloth Fine-tuning script
+│   ├── requirements.txt         # Transformers, FastAPI, Unsloth, etc.
+│   └── Dockerfile               # GPU-optimized container
+│
+├── docker-compose.yml           # Full-stack orchestration
+├── .gitignore                   # Ignores venv, node_modules, .env
+└── README.md                    # Project documentation
+
+```
+
+---
