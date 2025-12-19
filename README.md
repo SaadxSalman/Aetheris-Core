@@ -6,13 +6,34 @@
 
 ## 🛠️ Tech Stack
 
-The MedBERT platform is built using a modern, scalable architecture designed for high-performance medical applications:
+The MedBERT platform utilizes a hybrid architecture, combining a robust web infrastructure with a high-performance Python AI ecosystem to handle complex clinical reasoning.
 
-* **Frontend & Framework:** **Next.js** (React) with **TypeScript** for robust, type-safe development.
-* **Styling:** **Tailwind CSS** for a responsive, clinical-grade user interface.
-* **Backend:** **Node.js** & **Express.js** providing a high-performance API layer.
-* **Database:** **MongoDB** for flexible, document-based storage of clinical data and research metadata.
-* **Language:** **TypeScript** integrated across the entire MERN stack to ensure data integrity.
+### 🌐 Frontend & User Interface
+
+* **Framework:** [Next.js](https://nextjs.org/) (App Router) – Powering the clinician dashboard with fast server-side rendering and optimized client-side navigation.
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/) – For a high-density, "clinical-grade" UI that is fully responsive across tablets and desktops.
+* **Icons:** [Lucide React](https://lucide.dev/) – Providing a clear, professional medical iconography set.
+* **State Management:** [React Hooks](https://react.dev/) – Managing real-time diagnostic states and loading indicators.
+
+### ⚙️ Orchestration & Backend
+
+* **Runtime:** [Node.js](https://nodejs.org/) & [Express.js](https://expressjs.com/) – Acting as the central nervous system, handling authentication, audit logging, and service communication.
+* **Language:** [TypeScript](https://www.typescriptlang.org/) – Enforcing strict type safety across the entire MERN flow to prevent data corruption in patient records.
+* **Database:** [MongoDB](https://www.mongodb.com/) – A flexible NoSQL document store used for clinical metadata, anonymized diagnostic logs, and research paper summaries.
+
+### 🧠 AI Engine & Clinical Reasoning
+
+* **Base Model:** [Gemma](https://ai.google.dev/gemma) – Fine-tuned specifically for clinical reasoning and differential diagnosis.
+* **Fine-Tuning:** [Unsloth](https://unsloth.ai/) – Utilized for 2x faster training and 70% less memory usage via 4-bit quantization and LoRA adapters.
+* **Inference API:** [FastAPI](https://fastapi.tiangolo.com/) – A high-performance Python framework for serving model predictions with minimal latency.
+* **Embeddings:** [Sentence-Transformers](https://www.sbert.net/) – Creating medical-domain vector representations for Retrieval-Augmented Generation (RAG).
+
+### 🛡️ Privacy, Stats & DevOps
+
+* **Anonymization:** [Microsoft Presidio](https://microsoft.github.io/presidio/) – Automatically scrubbing PII (Names, Dates, Locations) from clinical notes using NER (Named Entity Recognition).
+* **Biostatistics:** [NumPy](https://numpy.org/) & [SciPy](https://scipy.org/) – Powering risk assessment models and probability calculations for differential diagnoses.
+* **Parsing:** [PyMuPDF](https://pymupdf.readthedocs.io/) & [LangChain](https://www.langchain.com/) – Processing complex medical PDFs and research papers into structured context chunks.
+* **Deployment:** [Docker](https://www.docker.com/) & [NVIDIA Container Toolkit](https://github.com/NVIDIA/nvidia-container-toolkit) – Orchestrating GPU-accelerated containers for a consistent environment.
 
 ---
 
@@ -104,3 +125,4 @@ MedBERT/
 ```
 
 ---
+
