@@ -4,6 +4,18 @@
 
 ---
 
+## 🛠️ Tech Stack
+
+The MedBERT platform is built using a modern, scalable architecture designed for high-performance medical applications:
+
+* **Frontend & Framework:** **Next.js** (React) with **TypeScript** for robust, type-safe development.
+* **Styling:** **Tailwind CSS** for a responsive, clinical-grade user interface.
+* **Backend:** **Node.js** & **Express.js** providing a high-performance API layer.
+* **Database:** **MongoDB** for flexible, document-based storage of clinical data and research metadata.
+* **Language:** **TypeScript** integrated across the entire MERN stack to ensure data integrity.
+
+---
+
 ## ⚙️ Key Components
 
 ### Custom Fine-Tuned Model
