@@ -19,7 +19,7 @@ The MedBERT platform is built using a modern, scalable architecture designed for
 ## ⚙️ Key Components
 
 ### Custom Fine-Tuned Model
-The heart of MedBERT is a **Large Language Model (LLM)**, such as a Gemma or Llama variant, that has been fine-tuned on a massive corpus of medical data. This fine-tuning process goes beyond simple memorization; it trains the model on the nuances of clinical language, disease progression, and the complex interconnections of medical concepts. This allows the model to "reason" through a patient's symptoms and lab results much like an experienced clinician.
+The heart of MedBERT is a **Large Language Model (LLM)**, in this case Gemma, that has been fine-tuned on a massive corpus of medical data. This fine-tuning process goes beyond simple memorization; it trains the model on the nuances of clinical language, disease progression, and the complex interconnections of medical concepts. This allows the model to "reason" through a patient's symptoms and lab results much like an experienced clinician.
 
 ### Domain-Specific Embeddings
 The project uses a custom, medical-specific embeddings model, built with a library like **Sentence-Transformers**. This model is trained to create highly accurate vector representations of medical concepts. For example, a search for "chest pain" would retrieve not just documents with that exact phrase, but also those related to **angina**, **myocardial infarction**, and other related conditions, ensuring a more comprehensive search for relevant information. 
