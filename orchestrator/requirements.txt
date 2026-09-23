@@ -1,0 +1,11 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+httpx>=0.27.0
+python-dotenv>=1.0.1
+langgraph>=0.2.55
+networkx>=3.4
+pydantic>=2.9.0
+neo4j>=5.25.0
+# NOTE: flashrank (cross-encoder reranker) is OPTIONAL — install manually if a
+# wheel exists for your Python version:  pip install flashrank
+# The engine falls back to the deterministic heuristic cross-scorer otherwise.

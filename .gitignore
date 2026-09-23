@@ -1,0 +1,50 @@
+# ---- Secrets (NEVER commit) ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+uv.lock
+
+# ---- Node / TypeScript ----
+node_modules/
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# ---- Runtime data (local vector/graph/sqlite fallbacks) ----
+.data/
+*.db
+*.sqlite
+*.sqlite3
+vectors.json
+graph.json
+
+# ---- Logs / OS / IDE ----
+logs/
+*.log
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# ---- Uploads / corpora ----
+corpus_uploads/

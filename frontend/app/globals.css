@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+:root {
+  --aeth-bg: #05070d;
+  --aeth-panel: #0a0f1c;
+  --aeth-line: rgba(148, 163, 184, 0.12);
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--aeth-bg);
+  color: #e2e8f0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas,
+    monospace;
+}
+
+.panel {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.92), rgba(8, 12, 24, 0.96));
+  border: 1px solid var(--aeth-line);
+  border-radius: 0.9rem;
+}
+
+.glow-cyan {
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.25), 0 0 24px rgba(34, 211, 238, 0.12);
+}
+.glow-violet {
+  box-shadow: 0 0 0 1px rgba(167, 139, 250, 0.25), 0 0 24px rgba(167, 139, 250, 0.1);
+}
+
+@keyframes aeth-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(34, 211, 238, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(34, 211, 238, 0);
+  }
+}
+.node-running {
+  animation: aeth-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes aeth-flow {
+  to {
+    stroke-dashoffset: -16;
+  }
+}
+.edge-active {
+  stroke-dasharray: 6 4;
+  animation: aeth-flow 0.7s linear infinite;
+}
+
+@keyframes aeth-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+.blink {
+  animation: aeth-blink 1s ease-in-out infinite;
+}
+
+.caret::after {
+  content: "▍";
+  color: #22d3ee;
+  animation: aeth-blink 0.9s steps(2) infinite;
+}
+
+/* scrollbars */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.35);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.55);
+}
+
+/* react flow dark tweaks */
+.react-flow__attribution {
+  display: none;
+}
+.react-flow__edge-path {
+  stroke-width: 1.6;
+}
+.react-flow__controls-button {
+  background: #0b1224;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+  color: #cbd5e1;
+  fill: #cbd5e1;
+}
+.react-flow__minimap {
+  background: rgba(10, 15, 28, 0.85) !important;
+}
+.react-flow__handle {
+  width: 8px;
+  height: 8px;
+  background: #22d3ee;
+  border: 2px solid #05070d;
+}
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke: #22d3ee;
+}
