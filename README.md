@@ -1106,7 +1106,7 @@ State carries across iterations (reformulated queries, web results, counters), e
 * [ ] Docker Compose (orchestrator + gateway + frontend + Neo4j + Supabase emulator).
 * [ ] Rust (Axum) gateway variant behind the same contract.
 
----
+--
 
 ### License & Credits
 
