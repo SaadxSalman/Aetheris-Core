@@ -1110,7 +1110,7 @@ State carries across iterations (reformulated queries, web results, counters), e
 
 ### License & Credits
 
-Built as a demonstration-grade reference implementation of modern corrective, grounded, graph-native RAG patterns. Core ideas credit the CRAG, GraphRAG, contextual retrieval, RRF, and PageRank literature — implemented here as one coherent, runnable system.
+Built as a demonstration-grade reference implementation of modern corrective, grounded, graph-native RAG patterns. Core ideas credit the CRAG, GraphRAG, contextual retrieval, RRF, and PageRank literature — implemented here as one coherent, runnable system..
 
 
 
