@@ -1104,7 +1104,7 @@ State carries across iterations (reformulated queries, web results, counters), e
 * [ ] Multi-tenant corpora with per-namespace HMAC secrets.
 * [ ] OpenTelemetry export for the SSE event stream.
 * [ ] Docker Compose (orchestrator + gateway + frontend + Neo4j + Supabase emulator).
-* [ ] Rust (Axum) gateway variant behind the same contract.
+* [ ] Rust (Axum) gateway variant behind the same contract
 
 ---
 
