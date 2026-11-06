@@ -886,7 +886,7 @@ IDs are content-addressed: `doc::<sha12>`, `chk::<doc>::<ordinal>::<hash8>`, `en
 Nodes: `Entity {normalized, name, type∈{component,datastore,model,process,artifact,actor,concept}, mentions}`.
 Edges: `RELATED {type∈{uses, depends_on, integrates_with, stores, routes, causes, produces, improves, mitigates, related_to}, weight}` plus `MENTIONS_IN → Chunk`.
 
-| Backend | Storage |
+| Backend | Storage 
 |---|---|
 | local | `graph.json` — node-link JSON + entity→chunks map + chunk texts (for summary extraction) |
 | Neo4j | native `(:Entity)-[:RELATED]->(:Entity)` + `(:Entity)-[:MENTIONS_IN]->(:Chunk)` |
