@@ -897,7 +897,7 @@ Sentence patterns like `(A) causes|uses|depends on|integrates with|stores|routes
 
 ---
 
-## 15. Ingestion Pipeline
+## 15. Ingestion Pipelin
 
 `POST /api/v1/ingest` → `ingest_document()` executes eight stages:
 
