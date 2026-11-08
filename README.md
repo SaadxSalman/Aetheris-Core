@@ -893,7 +893,7 @@ Edges: `RELATED {type∈{uses, depends_on, integrates_with, stores, routes, caus
 
 ### 14.4 Relationship typing heuristics (offline mode)
 
-Sentence patterns like `(A) causes|uses|depends on|integrates with|stores|routes|improves|mitigates|produces (B)` produce typed edges; remaining same-sentence co-occurrences add `related_to` at weight `0.5`. With an LLM configured, extraction switches to a strict-JSON prompt (30 entities / 40 relations max) while keeping the same storage contract
+Sentence patterns like `(A) causes|uses|depends on|integrates with|stores|routes|improves|mitigates|produces (B)` produce typed edges; remaining same-sentence co-occurrences add `related_to` at weight `0.5`. With an LLM configured, extraction switches to a strict-JSON prompt (30 entities / 40 relations max) while keeping the same storage contract.
 
 ---
 
