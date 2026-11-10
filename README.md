@@ -830,7 +830,7 @@ RERANKER_PROVIDER=cohere   # + COHERE_API_KEY=...
 # or: pip install flashrank   then RERANKER_PROVIDER=auto
 
 WEB_SEARCH_PROVIDER=tavily # + TAVILY_API_KEY=...
-# or leave auto with no keys → DuckDuckGo HTML (keyless
+# or leave auto with no keys → DuckDuckGo HTML (keyless)
 ```
 
 ---
