@@ -815,7 +815,7 @@ Effects when `none`: deterministic extractive generator (still fully cited + aud
 
 ```ini
 EMBEDDER_PROVIDER=openai_compatible
-EMBEDDING_BASE_URL=http://localhost:8010/v1     # e.g. HuggingFace TEI
+EMBEDDING_BASE_URL=http://localhost:8010/v     # e.g. HuggingFace TEI
 EMBEDDING_API_KEY=                              # if required
 EMBEDDING_MODEL=BAAI/bge-m3                     # or snowflake/snowflake-arctic-embed-l-v2.0
 EMBEDDING_DIM=1024
