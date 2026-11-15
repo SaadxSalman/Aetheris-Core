@@ -753,7 +753,7 @@ Flashrank activation: `pip install flashrank` inside the venv (optional — no w
 | `NEXT_PUBLIC_GATEWAY_API_KEY` | dev value | sent as `x-api-key` (only meaningful when auth enforced) |
 | `NEXT_PUBLIC_APP_NAME` | `Aetheris Core` | UI label |
 
-> **Production hardening checklist:** regenerate `GATEWAY_API_KEY`, `ATTRIBUTION_HMAC_SECRET`, `CONTENT_HASH_PEPPER`; set `GATEWAY_REQUIRE_AUTH=true`; set `APP_DEBUG=false`; put the gateway behind TLS; restrict `CORS_ORIGINS`.
+> **Production hardening checklist:** regenerate `GATEWAY_API_KEY`, `ATTRIBUTION_HMAC_SECRET`, `CONTENT_HASH_PEPPER`; set `GATEWAY_REQUIRE_AUTH=true`; set `APP_DEBUG=false`; put the gateway behind TLS; restrict `CORS_ORIGINS`
 
 ---
 
