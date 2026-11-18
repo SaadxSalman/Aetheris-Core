@@ -743,7 +743,7 @@ Flashrank activation: `pip install flashrank` inside the venv (optional — no w
 |---|---|---|
 | `SSE_HEARTBEAT_SECONDS` | `10` | `: ping` keep-alive cadence |
 | `TELEMETRY_MAX_EVENTS` | `600` | per-request event buffer |
-| `TELEMETRY_INCLUDE_CHUNKS` | `true` | emit per-chunk `chunk_retrieved` event |
+| `TELEMETRY_INCLUDE_CHUNKS` | `true` | emit per-chunk `chunk_retrieved` events |
 
 ### 11.14 Frontend (inlined at build time)
 
