@@ -604,7 +604,7 @@ That last one is the money shot: watch the grade node turn rose, the repair edge
 
 ### 11.1 Application / runtime
 
-| Key | Default | Description |
+| Key | Default | Description 
 |---|---|---|
 | `APP_NAME` | `Aetheris Core` | display name (health/config responses) |
 | `APP_ENV` | `development` | environment label |
