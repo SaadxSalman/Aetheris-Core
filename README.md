@@ -379,7 +379,7 @@ Route scores are exposed verbatim in `route_selected.scores` and shown as the ro
 
 `sql_tool.py` maps natural language onto **fixed, parameter-free SELECT templates** (never free-form LLM SQL):
 
-| NL pattern | Executed SQL |
+| NL pattern | Executed SQL 
 |---|---|
 | how many documents/files | `SELECT COUNT(*) documents, COUNT(DISTINCT source) sources FROM documents` |
 | how many chunks/passages | `SELECT COUNT(*) chunks, SUM(token_count) tokens FROM chunks` |
