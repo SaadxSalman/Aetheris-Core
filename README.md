@@ -268,7 +268,7 @@ Latency on the seeded corpus: **tens of milliseconds** end-to-end (47 SSE events
 | **Local search** | entity-centric questions (`"relationship between X and Y"`, any graph hit) | match seed entities in the query → expand 1-hop neighborhood → **Personalized PageRank** seeded on those nodes (`α=0.85`, 30 iters, edge weight = relation frequency) → evidence chunks linked to top-ranked entities | `[GRAPH]` block: seeds, PPR-ranked related entities, subgraph nodes/edges |
 | **Global search** | macro questions (`overall`, `themes`, `landscape`, `trends`, or `mode=global`) | after every ingestion the engine runs **greedy modularity community detection** on the weighted entity graph; each community (≥ `COMMUNITY_MIN_SIZE` members) gets a summary — LLM-written when configured, otherwise an extractive composer over its members' evidence chunks | `[GRAPH]` block: community keywords + community-summary pseudo-chunks entering RRF as first-class candidates |
 
-Community summaries persist in the `communities` table and refresh on every ingest, so global answers stay consistent as the corpus evolves
+Community summaries persist in the `communities` table and refresh on every ingest, so global answers stay consistent as the corpus evolves.
 
 ### 6.2 Corrective RAG (CRAG) Loop
 
