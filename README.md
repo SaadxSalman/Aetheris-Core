@@ -232,7 +232,7 @@ Aetheris-Core/
 
 ## 5. How an Answer Is Produced (Walkthrough)
 
-Take the query: *"How does the Corrective Grade Agent use the CRAG loop and web fallback?"*
+Take the query: *"How does the Corrective Grader Agent use the CRAG loop and web fallback?"*
 
 1. **`run_start`** — the API allocates `request_id=req_…`, builds the initial `AgentState`, opens the SSE bus.
 2. **`intent_router`** — scores six routes (`vector`, `graph_local`, `graph_global`, `hybrid`, `sql`, `web`) from keyword cues, relationship cues, recency cues, and **entity hits against the knowledge graph**. Here `"Corrective Grader Agent"` matches graph nodes → `route=graph_local`, plan `{bm25, dense, ppr, graph_local}`. Emits `route_selected` with all scores + human-readable reasons.
