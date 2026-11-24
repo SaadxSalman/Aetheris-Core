@@ -230,7 +230,7 @@ Aetheris-Core/
 
 ---
 
-## 5. How an Answer Is Produced (Walkthrough)
+## 5. How an Answer Is Produced (Walkthrough
 
 Take the query: *"How does the Corrective Grader Agent use the CRAG loop and web fallback?"*
 
