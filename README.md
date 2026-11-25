@@ -217,7 +217,7 @@ Aetheris-Core/
 
 ## 4. Technology Stack
 
-| Layer | Technologies | Role in Aetheris Core |
+| Layer | Technologies | Role in Aetheris Core 
 |---|---|---|
 | **Orchestration** | Python 3.14, **LangGraph**, FastAPI, uvicorn | Conditional state-machine loops for planning, reflection, CRAG correction, grounding repair |
 | **Backend API** | **Node.js 26, Fastify 5, TypeScript** | High-throughput async gateway: API-key auth, rate limiting, request IDs, **SSE fan-out** |
